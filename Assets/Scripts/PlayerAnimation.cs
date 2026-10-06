@@ -4,26 +4,53 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
+    [SerializeField] PlayerMovement movement;
+    [SerializeField] PlayerPunch punch;
+    [SerializeField] PlayerShout shout;
+    [SerializeField] PlayerJump jump;
     Animator anim;
-    PlayerMovement movement;
-
+    
     void Start()
     {
-        anim = GetComponent<Animator>();
         movement = GetComponent<PlayerMovement>();
+        punch = GetComponent<PlayerPunch>();
+        shout = GetComponent<PlayerShout>();
+        jump = GetComponent<PlayerJump>();
+        anim = GetComponent<Animator>();
     }
-
     
     void Update()
     {
-        if (movement.isWalking && movement.facingRight)
+        //Player Direction
+        if (movement.facingRight)
         {
-            anim?.Play("OuwenWalk");
+            transform.eulerAngles = new Vector2(transform.rotation.x, 0f);
         }
         else if (movement.facingLeft)
         {
+            transform.eulerAngles = new Vector2(transform.rotation.x, 180f);
+        }
+
+        //Player Animation
+        if (punch.isPunching)
+        {
+            anim?.Play("OuwenPunch");
+        }
+        else if (shout.isShouting)
+        {
+            anim?.Play("OuwenShout");
+        }
+        else if (jump.isJumping)
+        {
+            anim?.Play("OuwenJump");
+        }
+        else if (movement.isWalking)
+        {
             anim?.Play("OuwenWalk");
-            transform.Rotate(new Vector3())
+        }
+        else
+        {
+            anim?.Play("OuwenIdle");
         }
     }
 }
