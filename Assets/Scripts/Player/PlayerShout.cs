@@ -6,6 +6,7 @@ public class PlayerShout : MonoBehaviour
 {
     [SerializeField] public bool isShouting;
     [SerializeField] KeyCode shout;
+    [SerializeField] SoundFX sfx;
 
     void Start()
     {
@@ -22,7 +23,8 @@ public class PlayerShout : MonoBehaviour
     }
     IEnumerator ShoutSequence()
     {
-        yield return new WaitForSeconds(0.5f);
+        sfx.PlaySFX(sfx.ha);
+        yield return new WaitForSeconds(0.25f);
         isShouting = false;
     }
 }

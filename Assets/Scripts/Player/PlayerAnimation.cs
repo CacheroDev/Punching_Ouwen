@@ -8,6 +8,7 @@ public class PlayerAnimation : MonoBehaviour
     [SerializeField] PlayerPunch punch;
     [SerializeField] PlayerShout shout;
     [SerializeField] PlayerJump jump;
+
     Animator anim;
     
     void Start()
@@ -40,10 +41,10 @@ public class PlayerAnimation : MonoBehaviour
         {
             anim?.Play("OuwenShout");
         }
-        else if (jump.isJumping)
-        {
-            anim?.Play("OuwenJump");
-        }
+        //else if (jump.isJumping)
+        //{
+        //    anim?.Play("OuwenJump");
+        //}
         else if (movement.isWalking)
         {
             anim?.Play("OuwenWalk");
