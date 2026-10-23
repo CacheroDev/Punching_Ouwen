@@ -27,6 +27,7 @@ public class Knockback : MonoBehaviour
             StartCoroutine(KnockbackVector());
         }
         if (transform.position.x - player.transform.position.x > 0)
+
         {
             goRight = true;
         }

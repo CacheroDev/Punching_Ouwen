@@ -400,6 +400,7 @@ GameObject:
   - component: {fileID: 690783379}
   - component: {fileID: 690783373}
   - component: {fileID: 690783380}
+  - component: {fileID: 690783381}
   m_Layer: 0
   m_Name: Balatkayo
   m_TagString: Untagged
@@ -557,6 +558,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &690783381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690783372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7905ceb39f1c5c544acf364c26a4e572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  maxDistance: 2.45
 --- !u!1 &696324290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,7 +1378,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 849427167}
-  - component: {fileID: 849427168}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -1388,19 +1402,6 @@ Transform:
   - {fileID: 696324291}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &849427168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849427166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc2d6df806ec8d14c9aaaaaa616dc3bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time: 1
 --- !u!1 &1135827020
 GameObject:
   m_ObjectHideFlags: 0

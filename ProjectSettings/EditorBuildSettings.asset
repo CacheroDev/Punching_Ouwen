@@ -15,6 +15,36 @@ EditorBuildSettings:
     path: Assets/Scenes/01_Story03.unity
     guid: 5579e008ca3337d46aea148a2f72c243
   - enabled: 1
+    path: Assets/Scenes/01_Story04.unity
+    guid: 8ae78cdcf43b994468a898cc18275cb8
+  - enabled: 1
+    path: Assets/Scenes/01_Story05.unity
+    guid: 568cbf710dbc38c4a9c7cb44d3f35358
+  - enabled: 1
+    path: Assets/Scenes/01_Story06.unity
+    guid: 552added084908b459d98cb54aa6aaa4
+  - enabled: 1
+    path: Assets/Scenes/01_Story07.unity
+    guid: e503ce9841032e942bc0db39eabdf9e7
+  - enabled: 1
+    path: Assets/Scenes/01_Story08.unity
+    guid: 4d6fa0d7507145a4084f3138cdac6b85
+  - enabled: 1
+    path: Assets/Scenes/01_Story09.unity
+    guid: d3456c127b5795e4a88c698f98599da0
+  - enabled: 1
+    path: Assets/Scenes/01_Story10.unity
+    guid: 46624703ccceec44b9c8658ec8138059
+  - enabled: 1
+    path: Assets/Scenes/01_Story11.unity
+    guid: bd4962ecd967eff4595743534355d5cc
+  - enabled: 1
+    path: Assets/Scenes/01_Story13.unity
+    guid: ca61053c6c7829246b44ed538309504d
+  - enabled: 1
+    path: Assets/Scenes/01_Story14.unity
+    guid: fbc4ba81470f35d4fb5a747a662e822a
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
